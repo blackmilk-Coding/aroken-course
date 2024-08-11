@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="html-logo.svg" type="image/x-icon">
+  <title>Ссылки и кнопки - a и button</title>
+
+  <style>
+    ul{
+      list-style-type: none;
+    }
+    a{
+      color: white;
+      text-decoration: none;
+    }
+    header{
+      padding: 30px;
+      background-color: black;
+      color: white;
+    }
+
+    header{ 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header > nav > ul{
+      display: flex;
+      gap:80px;
+
+    }
+
+    .logo{
+      width: 70px;
+      height: 70px;
+    }
+
+    .contacts{
+      display: flex;
+      flex-direction: column;
+    }
+
+  </style>
+</head>
+  <main>
+    <header>
+      <div class="logo">
+        <img src="html-logo.svg" alt="логотип">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="blog.html">blog</a></li>
+          <li><a href="about-us.html">about us</a></li>
+        </ul>
+      </nav>
+      <div class="contacts">
+        <ul>
+          <li><a href="tel:+79999999">8(999)999-99-99</a></li>
+          <li><a href="mailto:example@mail.ru">example@mail.ru</a></li> 
+        </ul>
+      </div>
+    </header>
+
+    <section>
+      <button>Кнопка Куда-то</button>
+      <button>Кнопка Куда-то</button>
+      <button>Кнопка Куда-то</button>
+      <button>Кнопка Куда-то</button>
+      <button>Кнопка Куда-то</button>
+    </section>
+  </main>
+
+</body>
+</html>
