@@ -1,0 +1,16 @@
+header{
+  height: 60px;
+  background-color: #ecb92b;
+}
+
+footer{
+  height: 300px;
+  background-color: blueviolet;
+  color: white;
+}
+footer a{
+  color: white;
+}
+.quote{
+  background-color: #c9b47b;
+}
