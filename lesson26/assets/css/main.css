@@ -1,0 +1,60 @@
+div{
+  width: 70%;
+  padding: 30px;
+  color: white;
+  background-color: black;
+  /* Селектор по тегу */
+}
+
+
+.block1 , .block2, .block3, .block4, .block5{
+  font-size: 3em;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* Cелектор по классу и комбинация селекторов*/
+}
+
+#id-block{
+  background-color: #6495ed;
+  color: black;
+  /* Селектор по ID */
+}
+
+[data-example]{
+  text-transform: uppercase;
+  font-size: 5em;
+  /* Селектор по атрибуту */
+
+}
+
+[data-example]:hover{
+  color: yellowgreen;
+  transition: .3s all;
+  cursor:pointer
+}
+
+[data-example="value1"]{
+  border: 1px solid white;
+  background-color: burlywood;
+}
+
+[data-example="value1"]:hover{
+  color: #191a17;
+}
+
+.orange{
+  color: orange;
+  font-size: 30px;
+}
+
+div > .orange{
+  font-size: 10px;
+  color: white;
+  padding: 0;
+  text-align: center;
+   /* контекстные селекторы */
+}
+
+.parent > .child{
+  color: rgb(128, 61, 61);
+   /* контекстные селекторы */
+}
