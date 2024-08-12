@@ -1,0 +1,31 @@
+.sec1{
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.sec2{
+  text-decoration:line-through;
+  font-size: 35px;
+}
+
+.sec3 {
+  font-size: 45px;
+  text-align: center;
+}
+
+.sec4, .sec5{
+  font-size: 30px;
+}
+.sec4{
+  text-decoration: overline wavy;
+  word-spacing: 30px;
+}
+
+.sec5{
+  letter-spacing: 5px;
+  text-decoration: underline double;
+
+}
