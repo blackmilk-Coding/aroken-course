@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="html-logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Приоритеты селекторов</title>
+</head>
+<body>
+  <div>
+    див, селектор по тегу
+  </div>
+
+  <div class="myclass">
+    див, селектор по классу
+  </div>
+
+  <div id="unic-id">
+    див, селектор по id
+  </div>
+
+  <div class="attr-style" style="background-color: black; border:10px solid rgb(38, 20, 87); color:white;">
+    див, с атрибутом
+  </div>
+  
+  <div class="desc">
+    Элемент div, наследует стили от класса из селектора
+    Далее, так-как браузер читает код сверху вниз,
+    стили переписываються.
+
+    Тот див у которого стили заданы с помощью атрибута.
+    Переписываться не будет, так-как у атрибута высокий приоритет,
+    но если поставить флаг !important, то у этих стилей,
+    будет приоритет выше и стили перепишуться
+</div>
+
+</body>
+</html>

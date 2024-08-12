@@ -1,0 +1,45 @@
+body{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+div{
+  width:300px;
+  height:200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(243, 14, 14);
+}
+
+.myclass{
+  background-color: aqua;
+}
+
+#unic-id{
+  background-color: rgb(22, 77, 77);
+  color: white;
+}
+
+.attr-style{ 
+  background-color: rgb(22, 77, 77);
+  color: black;
+}
+
+.desc{
+  padding: 30px;
+  text-align: center;
+  background-color: rgb(22, 77, 77);
+  color: white;
+}
+/* 
+  Элемент div, наследует стили от класса из селектора
+  Далее, так-как браузер читает код сверху вниз,
+  стили переписываються.
+
+  Тот див у которого стили заданы с помощью атрибута.
+  Переписываться не будет, так-как у атрибута высокий приоритет,
+  но если поставить флаг !important, то у этих стилей,
+  будет приоритет выше и стили перепишуться
+
+*/
