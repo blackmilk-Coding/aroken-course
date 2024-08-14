@@ -1,13 +1,11 @@
-.parent{
-  background-color: aqua;
-  width: 300px;
-  height: 300px;
-  padding:80px;
-  margin: 0 auto
+.body{
+  display: flex;
+  justify-content: center;
+  gap: 5%;
 }
 
-.child{
-  background-color: rgb(27, 34, 34);
-  width: 300px;
-  height: 300px;
+.brd{
+  width: 50%;
+  height: 400px;
+  background-color: black;
 }
