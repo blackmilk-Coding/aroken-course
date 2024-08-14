@@ -1,0 +1,26 @@
+body{
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+  padding-top: 100px;
+}
+
+.blc{
+  width: 20%;
+  height: 200px;
+  background-color: black;
+}
+
+.blc1{
+  box-shadow: 5px 5px 100px 20px rgba(11, 129, 219, 0.582);
+}
+
+.blc2{
+  box-shadow: 10px 10px 30px 1px rgba(207, 17, 17, 0.582);
+}
+
+.blc3{
+
+  box-shadow: -30px -30px 15px -1px #04f839e7;
+  
+}
