@@ -1,0 +1,31 @@
+body {
+    font-size: 40px;
+    background: #f3f3f6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.box{
+    font-size: 20px;
+    border: 10px solid red;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.box-child{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: darksalmon;
+    border:1px solid black;
+    padding:10px;
+    width: 300px;
+    min-height: 300px;
+    max-height: 200px;
+}
