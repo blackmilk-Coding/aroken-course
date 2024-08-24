@@ -11,6 +11,22 @@ body{
 a{
   color: white;
 }
+
+h2{
+  font-size: 40px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+h3{
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
 .wrapper{
   width:80%;
   margin: 0 auto;
@@ -34,4 +50,133 @@ a{
   border-radius: 100px;
   background-color: white;
   color: #2766AE;
+}
+
+.main-section{
+  
+  background: url('hero-image.png') 0/100%  no-repeat;
+}
+
+.main-section-text__description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding:120px 0px;
+}
+
+.main-section-text__content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-section-text__content__text{
+  width: 45%;
+
+}
+
+
+.main-section-text__content__paragraph{
+  margin-bottom: 15px;
+}
+
+.main-section-text__content__paragraph > span{
+  color: #01A2CB;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.main-section-text__content__button{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+.main-section-text__description__button{
+  width: 320.0px;
+  height: 56.0px;
+  padding: 18px 30px;
+  border-radius: 100px;
+  background: linear-gradient(180deg, #00A4CC 0%, #2766AE 100%);
+}
+
+.main-section-text__description__button_two > span{
+  margin-right: 4px;
+}
+
+
+.card{
+  margin: 120px 0;
+}
+
+.wrapper_card{
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.container-card{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -28px;
+}
+.card-heading{
+  max-width: 503px;
+  text-align: center;
+  margin: 0 auto 60px;
+}
+
+.card-heading h2{
+  margin-bottom: 15px;
+}
+.blue-card{
+  flex: 0 0 25%;
+  padding:0 14px;
+  margin-bottom: 28px;
+}
+.blue-card__inner{
+  border-radius: 16px;
+  border: 2px solid #176BAE;
+  background: #197CB8;
+  box-shadow: 4px 4px 13px 0px rgba(5, 13, 41, 0.76);
+  text-align: center;
+  padding:28px 15px;
+}
+
+.blue-card__inner > h3{
+  margin-bottom: 10px;
+}
+.cards-button{
+  width: 505px;
+  margin: 0 auto;
+}
+.cards-button > button{
+  display: block;
+  width: 100%;
+  height: 56.0px;
+  padding: 18px 30px;
+  border-radius: 100px;
+  background: linear-gradient(180deg, #00A4CC 0%, #2766AE 100%);
+}
+footer{
+  border-top: 3px solid #323952;
+  padding:60px 0;
+}
+
+.wrapper_footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-text{
+  width: 30%;
+}
+.footer-text > img{
+  margin-bottom: 20px;
+}
+.nav-footer > h3{
+  margin-bottom: 20px;
+}
+
+.nav-footer > ul > li{
+  margin-bottom: 10px;
 }
