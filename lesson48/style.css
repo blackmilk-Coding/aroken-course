@@ -1,0 +1,40 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form{
+  margin-top: 10%;
+  width: 1000px;
+}
+
+.form-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:30px;
+  padding:30px;
+}
+.form-content > input{
+  padding:10px;
+  width: 400px;
+  background-color: rgba(194, 186, 186, 0.733);
+}
+
+.form-content > textarea{
+  width:450px;
+}
+.form-button{
+  width:30%;
+  max-width: 400px;
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 100px;
+  border:1px solid transparent;
+  background: linear-gradient(100deg, #1d4650ab 0%, #2585f3 100%);
+}
+
+.form-button_send{
+  margin-top: 100px;
+}
