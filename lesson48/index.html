@@ -10,16 +10,19 @@
   <form>
     <fieldset class="aboutMe form-content">
       <legend>Кто вы?</legend>
-      <input type="text" name="firstname" id="" placeholder="Как вас зовут?">
-      <input type="text" name="lasname" id="" placeholder="Ваша фамилия">
-      <textarea id="" cols="30" rows="10" placeholder="Коротко расскажите, почему выбрали нашу команду"></textarea>
+      <input type="text" name="firstname" id="" placeholder="Как вас зовут?" required>
+      <input type="text" name="lasname" id="" placeholder="Ваша фамилия" required>
+      <label for="dateYear">Выберите дату рождения</label>
+      <input type="date" name="dateYear">
+      <textarea id="" cols="30" rows="10" placeholder="Коротко расскажите, о своих навыках"></textarea>
+      <textarea id="" cols="30" rows="10" placeholder="Коротко расскажите, о своём опыте работы"></textarea>
       <button type="reset" class="form-button">очистить</button>
     </fieldset>
 
     <fieldset class="contacts form-content">
       <legend>Ваши контакты</legend>
-      <input type="tel:+7" name="number" id="" placeholder="Введите ваш номер телефона">
-      <input type="email" name="mailk" id="" placeholder="введите вашу почту">
+      <input type="tel:+7" name="number" id="" placeholder="Введите ваш номер телефона" required>
+      <input type="email" name="mailk" id="" placeholder="введите вашу почту" required>
       <button type="reset" class="form-button">очистить</button>
     </fieldset>
 
