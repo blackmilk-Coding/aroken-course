@@ -1,0 +1,49 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #1b1919;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block{
+  position: relative;
+  background-color: #4b4949;
+  width:200px;
+  height:200px;
+  border-radius: 30px;
+  margin-top: 20%;
+}
+
+.block__progress{
+  width:0px;
+  height:20px;
+  background-color: white;
+  position: absolute;
+  left:-250px;
+  top:-40px
+}
+
+.block__message{
+  position: absolute;
+  left:38%;
+  top:35%;
+  color:rgb(11, 211, 11);
+  font-size: 20px;
+  opacity: 0;
+}
+
+.block:hover > .block__progress{
+  transition: 1s;
+  width:700px;
+
+}
+
+.block:hover >.block__message{
+  transition-delay: .9s;
+  transition-duration: .3s;
+  opacity: 1;
+}
