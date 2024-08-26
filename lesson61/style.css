@@ -1,0 +1,35 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+body{
+  background-color: #1b1919;
+}
+.container{
+  margin: 0 auto;
+  width: 80%;
+}
+
+.grid{
+  border:2px solid #363636;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+}
+
+.grid-container{
+  border:2px dashed white;
+  width:100%;
+}
+
+
+.item{
+  border:1px dashed grey;
+}
+
+.grid-1{
+  display: grid;
+  grid-template-columns:200px 200px 200px;
+  grid-template-rows: 200px 200px 200px;
+}
