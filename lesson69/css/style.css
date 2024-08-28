@@ -1,8 +1,9 @@
 body{ 
   font-family: "Montserrat","Arial", sans-serif;
-  line-height: 150%;
+  line-height: 1.5;
   color:#25282b;
   background: #f8fcff;
+  height:200vh;
 }
 
 .container{
@@ -10,4 +11,139 @@ body{
   margin: 0 auto;
   padding:0 15px;
   height:100%;
+}
+
+.header {
+  line-height: 1.5;
+}
+.header__inner {
+  min-height: 108px;
+  display: grid;
+  grid-template-columns:1fr auto 1fr;
+  gap:15px;
+  align-content: center;
+  align-items: center;
+}
+.nav {
+}
+.nav__list {
+  display: flex;
+  gap:10px 30px;
+  flex-wrap: wrap;
+}
+.nav__item {
+}
+.nav__link {
+}
+.header__logo {
+  max-width: 54px;
+}
+.header__social {
+  justify-content: end;
+}
+.social {
+  display: flex;
+  gap:10px 30px;
+  flex-wrap: wrap;
+}
+.social__item {
+}
+.social__link {
+}
+
+/* ----------------------- */
+
+.hero{
+  padding:120px 0;
+  background-color: #25282b;
+  color:#F8FCFF;
+  line-height: 1.5;
+  position: relative;
+  z-index: 2;
+}
+
+.hero__inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__heading{
+  font-size: 52px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.hero__list{
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+.hero__list__item{
+  display: flex;
+  align-items: center;
+  gap:18px;
+  transition: all .5s;
+}
+.hero__list__item:not(:last-child){
+  /* у not плохая поддержка в старых браузерах, но здесь оставлю так */
+  margin-bottom: 15px;
+}
+
+
+.hero__list__item:hover{
+  color:#1D6FB6;
+  transition: all .5s;
+}
+
+
+.hero__list__item:hover path{
+  fill:#1D6FB6;
+  transition: all .5s;
+}
+.hero__video{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  z-index: -1;
+}
+
+.hero__video > video{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+}
+
+.hero__video::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  background-color: #102e4981;
+}
+
+
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  max-width: 288px;
+  height: 56px;
+  border-radius: 100px;
+  background:  #D0DCE7;
+  color:#1D6FB6;
+  transition: all .5s;
+}
+
+.button:hover{
+  color:#F8FCFF;
+  background-color: #83ADD3;
 }
