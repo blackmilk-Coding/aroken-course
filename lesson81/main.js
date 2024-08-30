@@ -7,6 +7,6 @@ for(let i=0; i < number.length; i++){
   }
 }
 
-for(let i=rainbowColors.length-1; i != 0; i-- ){
+for(let i=rainbowColors.length-1; i >= 0; i-- ){
   console.log(rainbowColors[i])
 }
