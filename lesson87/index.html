@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>урок 87</title>
+</head>
+<style>
+  *{
+    margin:0;
+    padding: 0;
+  }
+  .header{
+    display: flex;
+    align-items: center;
+    gap:10px;
+  }
+  .styleBtn{
+    width:200px;
+    height:50%; 
+
+  }
+
+  .ListOn{
+    padding:30px;
+    background-color: cadetblue;
+    border:1px solid transparent;
+    border-radius: 10px;
+    cursor:pointer;
+    font-size: 20px;
+  }
+  .list{
+    width: 50%;
+    margin:0 auto;
+    padding:100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap:30px;
+    color:rgb(19, 17, 17);
+  }
+
+  .list-on{
+    width:40%;
+    padding:20px;
+    color:rgb(58, 37, 37);
+    background-color: chocolate;
+    list-style-type: none;
+    transition: all 1s;
+    opacity: 0;
+  }
+
+  .list-on > li{
+    height: 0;
+    opacity: 0;
+  }
+
+  .list-on--active{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    opacity: 1;
+  }
+
+  .list-on--active > li{
+    height:100%;
+    opacity: 1;
+  }
+</style>
+<body>
+  <div class="header">
+    <button class="styleBtn" id="sayHello">Нажми на меня</button>
+    <button class="styleBtn" id="sayGoodBye">Нажми на меня</button>
+  </div>
+  <div class="main">
+    <div class="list">
+      <button class="ListOn">
+        Показать список
+      </button>
+
+      <ul class="list-on">
+        <li class="list-on__item">
+          Работа не волк. Никто не волк. Только волк — волк.
+        </li>
+        <li class="list-on__item">
+          Настоящий мужчина, как ковер тети Зины — с каждым годом лысеет.
+        </li>
+        <li class="list-on__item">
+          Мама учила не ругаться матом, но жизнь научила не ругаться матом при маме.
+        </li>
+        <li class="list-on__item">
+          Если тебе где-то не рады в рваных носках, то и в целых туда идти не стоит.
+        </li>
+        <li class="list-on__item">
+          Тут — это вам не там.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="btns">
+    <div class="btn">
+      1
+      <div class="btn btn2">
+        2
+
+        <div class="btn btn4">
+          3
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+
+</div>
+</body>
+<script src="main.js"></script>
+</html>
