@@ -85,7 +85,6 @@ ul{
 }
 /* ------------- */
 .modal__inner{
-  padding:300px;
   display: flex;
   align-items: center;
   justify-items: center;

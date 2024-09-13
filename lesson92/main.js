@@ -8,7 +8,6 @@ const modalVoid = document.querySelector('.modal__autorization')
 btnWrapper.addEventListener('click', event => {
   const target = event.target
   body.classList.add('body--scroll-lock')
-
   if(target.classList.contains('autorization__link--reg')){
     modalRegistr.classList.add('modal--open')
   }
