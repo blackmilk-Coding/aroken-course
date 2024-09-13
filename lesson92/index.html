@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <title>урок 92</title>
 </head>
-<body class="body body--scroll-lock">
+<body class="body">
   <header class="header">
     <div class="container">
       <div class="header__inner">
@@ -34,8 +34,8 @@
       </div>
     </div>
   </header>
-
-  <div class="modal modal__register modal--open"> 
+<div class="modals">
+  <div class="modal modal__register"> 
     <div class="modal__inner">
       <form class="modal__form" action="#">
         <label for="#">Придумайте логин</label>
@@ -50,10 +50,21 @@
       </div>
     </div>
   </div>
-</body>
+
+  <div class="modal modal__autorization"> 
+    <div class="modal__inner">
+      <form class="modal__form" action="#">
+        <input type="text" placeholder="введите логин">
+        <input type="password" placeholder="введите пароль">
+        <button>войти</button>
+      </form>
+      <div class="modal__closed">
+        &#x2717;
+      </div>
+    </div>
+  </div>
+
 </div>
 </body>
-<script src="main.js">
-  console.log('hello')
-</script>
+<script src="main.js"></script>
 </html>
