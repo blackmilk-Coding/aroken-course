@@ -89,6 +89,9 @@ ul{
   display: flex;
   align-items: center;
   justify-items: center;
+  padding:40px;
+  background-color: #3d3d3d;
+  border-radius: 4px;
 }
 .modal__form{
   display: flex;
