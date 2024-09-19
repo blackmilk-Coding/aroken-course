@@ -38,10 +38,12 @@ for(let i = 0; i < modalWrapperChildren.length; i++){
 document.addEventListener('keydown', function(event) {
   if(event.code == "Escape"){
     for(let i = 0; i < modalWrapperChildren.length; i++){
-
+      console.log(event)
       if(modalWrapperChildren[i].classList.contains('modal--open')){
         modalWrapperChildren[i].classList.remove('modal--open')
         body.classList.remove('body--scroll-lock')
+      }else{
+        break
       }
     }
   }
