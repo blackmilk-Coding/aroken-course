@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Wake & Bake</title>
 </head>
-<body>
+<body class="body">
   <div class="wrapper">
     <header class="header">
       <div class="header__top">
@@ -16,21 +16,28 @@
           <div class="header__top-inner">
             <img class='header__logo' src="img/icons/logotypes/logo-header.svg" alt="logo dark">
             <nav class="header-nav">
-              <ul class="nav-list">
-                <li class="nav-list__item">
+              <ul class="nav__list">
+                <li class="nav__list__item">
                   <a href="#" class="nav__link">Программа обучения</a>
                 </li>
-                <li class="nav-list__item">
+                <li class="nav__list__item">
                   <a href="#"  class="nav__link">Галерея</a>
                 </li>
-                <li class="nav-list__item">
+                <li class="nav__list__item">
                   <a href="#"  class="nav__link">Отзывы</a>
                 </li>
-                <li class="nav-list__item">
+                <li class="nav__list__item">
                   <a href="#"  class="nav__link">Контакты</a>
                 </li>
               </ul>
             </nav>
+
+            <div class="burger-icon">
+              <a href="#">
+                <span></span>
+              </a>
+            </div>
+  
         </div>
         </div>
       </div>
@@ -51,7 +58,13 @@
                 новые возможности для самореализации и любимое дело
               </p>
 
-              <a href="#" class="hero__button button">
+              <div class="hero__img-control hero__img-control--mobile">
+                <a data-fslightbox href="img/cake.mp4" class="hero__img-button">
+                  <img src="img/icons/play.svg" alt="">
+                </a>
+                  Посмотри, как готовятся наши торты
+              </div>
+              <a href="#" class="hero__button button hero__button--mobile">
                 Записаться на курс
               </a>
             </div>
@@ -74,6 +87,7 @@
   </div>
 
 <script src="js/main.js"></script>
+<script src="js/burger-menu.js"></script>
 <script src="js/fslightbox.js"></script>
 
 </body>
