@@ -260,23 +260,18 @@ body {
 .footer__col {
 }
 .footer__logo {
-  display: block;
-  max-width: 240px;
+
 }
 .footer__desc{
-  margin-bottom: 20px;
 }
 
 .footer__col-list {
-  margin-top: -5px;
 }
 .footer__col-list__item {
-  margin-bottom: 10px;
+  
 }
 
 .footer__col__link{
-  display: block;
-  margin-bottom: 5px;
 }
 .footer__contacts__list {
 
@@ -286,7 +281,6 @@ body {
 }
 
 .footer-contacts__item:last-child {
-  margin-bottom: 0;
 }
 
 .footer__col-tel {
@@ -300,8 +294,6 @@ body {
 .social {
 }
 .social-list {
-  display: flex;
-  gap:15px
 }
 .social-list__item {
 }
