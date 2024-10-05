@@ -5,8 +5,8 @@ const button = document.querySelector('.about__img-button')
 
 
 
-button.addEventListener('click', () => {
-  console.log('click')
+button.addEventListener('click', (event) => {
+  event.preventDefault()
   body.classList.add('body--open-modal')
   body.classList.toggle('body--scroll-lock')
 })
@@ -18,6 +18,7 @@ const removeClasses = function(){
 
 modal.addEventListener('click', event =>{
   let target = event.target
+  event.preventDefault()
 
   if(target.classList.contains('modal__closed')){
     removeClasses()
@@ -33,6 +34,7 @@ modal.addEventListener('click', event =>{
 })
 
 document.addEventListener('keydown', function(event) {
+  event.preventDefault()
   if(event.code == "Escape"){
     if(body.classList.contains('body--open-modal')){
       removeClasses()
