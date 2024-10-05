@@ -3,6 +3,7 @@
   --body-color: #FFF9F4;
   --accent-color: #ffa55c;
   --transition:all .4s;
+  --brd-radius:20px;
 }
 
 body {
@@ -61,6 +62,8 @@ body {
   background-color: var(--accent-color);
   border-radius: 60px;
   transition: var(--transition);
+
+  width:100%;
 }
 
 
@@ -121,6 +124,90 @@ body {
   transform: rotate(-45deg);
 }
 
+/* ===================================== */
+
+.modal {
+  background: #00000048;
+  position: fixed;
+  top:0;
+  inset: 0;
+  z-index: 13;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+}
+.modal__window {
+  background-color: var(--body-color);
+  padding:0 60px 60px;
+  max-width: 428px;
+
+  position: relative;
+}
+.modal__closed {
+  position: absolute;
+  right:20px;
+  top:20px;
+  transition: var(--transition);
+}
+
+.modal__closed:hover path{
+  transition: var(--transition);
+}
+
+.modal__closed:hover path,
+.modal__closed:hover rect{
+  stroke:#AC907A;
+}
+.modal__cupcake {
+  margin-top: -65px;
+  margin-left:13px;
+  margin-bottom: 15px;
+}
+.modal__heading {
+  color:  #1F1711;
+  font-family: Gabriola;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: .9;
+
+  margin-bottom: 10px;
+}
+.modal__text {
+  margin-bottom: 30px;
+}
+.modal__input {
+  padding:19px 41px 28px 19px;
+  border: 1px solid #AC907A;
+  width:100%;
+
+
+  color: #AC907A;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius:var(--brd-radius);
+
+  margin-bottom: 10px;
+
+  transition: var(--transition);
+
+}
+
+.modal__input:hover{
+  border:1px solid #FFA55C;
+  color:#FFA55C;
+}
+
+.modal__input:hover::placeholder{
+  color:#FFA55C;
+}
+
+.modal__input:focus{
+  
+}
+/* ===================================== */
 /* ========================================================== */
 .header{
   background: url("../img/decor/background-header.jpg") 50% 100% / cover no-repeat;
@@ -272,7 +359,7 @@ body {
   gap:53px;
 }
 .about__img {
-  border-radius: 20px;
+  border-radius:var(--brd-radius);
   overflow: hidden;
   position: relative;
 }
@@ -291,7 +378,7 @@ body {
   background: rgba(149, 123, 151, 0.90);
   color:var(--body-color);
   max-width: 300px;
-  border-radius: 20px;
+  border-radius:var(--brd-radius);
   padding: 15px 20px;
   position: absolute;
   left: 4%;
@@ -349,7 +436,7 @@ body {
   gap:32px;
 }
 .about__content__item {
-  border-radius: 20px;
+  border-radius:var(--brd-radius);
   background: #FFE0CB;
   padding:29px 25px;
 
