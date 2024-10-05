@@ -247,34 +247,37 @@
       </div>
     </footer> 
   </div>
-
+  <div class="modal">
+    <div class="modal__window">
+      <a href="#" class="modal__closed">
+          <svg class="modal__closed-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.75" y="0.75" width="22.5" height="22.5" rx="11.25" stroke="#E1D9E1" stroke-width="1.5"/>
+            <path d="M6.75793 17.2433L12.0009 12.0003L17.2439 17.2433M17.2439 6.75732L11.9999 12.0003L6.75793 6.75732" stroke="#E1D9E1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </a>
+  
+      <img src="img/content/cupcakes-popup.png" alt="" class="modal__cupcake">
+  
+        <h2 class="modal__heading">
+          Удиви своих близких вкусными капкейками 
+        </h2>
+  
+        <p class="modal__text">
+          Оставь свой e-mail, и мы вышлем рецепт на почту
+        </p>
+  
+        <label class="field">
+          <input type="email" class="field__input" placeholder="E-mail">
+          <span>Введите e-mail</span>
+        </label>
+        
+  
+        <button class="button button--modal">получить подарок</button>
+    </div>
+  </div>
 <script src="js/main.js"></script>
 <script src="js/burger-menu.js"></script>
 <script src="js/fslightbox.js"></script>
-
-<div class="modal">
-  <div class="modal__window">
-    <a class="modal__closed">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="0.75" y="0.75" width="22.5" height="22.5" rx="11.25" stroke="#E1D9E1" stroke-width="1.5"/>
-        <path d="M6.75793 17.2433L12.0009 12.0003L17.2439 17.2433M17.2439 6.75732L11.9999 12.0003L6.75793 6.75732" stroke="#E1D9E1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
-
-    <img src="img/content/cupcakes-popup.png" alt="" class="modal__cupcake">
-
-      <h2 class="modal__heading">
-        Удиви своих близких вкусными капкейками 
-      </h2>
-
-      <p class="modal__text">
-        Оставь свой e-mail, и мы вышлем рецепт на почту
-      </p>
-
-      <input type="email" class="modal__input" placeholder="E-mail">
-
-      <button class="button button--modal">получить подарок</button>
-  </div>
-</div>
+<script src="js/modal-window.js"></script>
 </body>
 </html>  

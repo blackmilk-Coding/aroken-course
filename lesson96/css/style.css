@@ -105,6 +105,10 @@ body {
 .burger-icon span::after{
   bottom:-10px;
 }
+
+.body--scroll-lock{
+  overflow: hidden;
+}
 .body--open-list{
   overflow: hidden;
 }
@@ -124,6 +128,7 @@ body {
   transform: rotate(-45deg);
 }
 
+
 /* ===================================== */
 
 .modal {
@@ -137,7 +142,21 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 10vh;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition:all .6s;
 }
+
+.body--open-modal .modal{
+  visibility: visible;
+  opacity: 1;
+
+
+}
+
+
 .modal__window {
   background-color: var(--body-color);
   padding:0 60px 60px;
@@ -150,8 +169,12 @@ body {
   right:20px;
   top:20px;
   transition: var(--transition);
+  padding:10px;
+  z-index: 1;
 }
-
+.modal__closed svg{
+  z-index: 0;
+}
 .modal__closed:hover path{
   transition: var(--transition);
 }
@@ -178,7 +201,10 @@ body {
 .modal__text {
   margin-bottom: 30px;
 }
-.modal__input {
+.field{
+  position: relative;
+}
+.field__input {
   padding:19px 41px 28px 19px;
   border: 1px solid #AC907A;
   width:100%;
@@ -194,18 +220,38 @@ body {
   transition: var(--transition);
 
 }
+.field span{
+  color: #AC907A;
+  position: absolute;
+  top: -12px;
+  left: 21px;
+  font-size: 11px;
 
-.modal__input:hover{
+  visibility: hidden;
+  opacity: 0;
+
+  transition: var(--transition);
+}
+
+.field__input:hover{
   border:1px solid #FFA55C;
   color:#FFA55C;
 }
 
-.modal__input:hover::placeholder{
+.field__input:hover::placeholder{
   color:#FFA55C;
+  transition: var(--transition);
 }
-
-.modal__input:focus{
-  
+.field__input:focus::placeholder{
+  opacity: 0;
+  visibility: hidden;
+}
+.field__input:focus{
+  padding:26px 41px 21px 19px;
+}
+.field__input:focus + span{
+  visibility: visible;
+  opacity: 1;
 }
 /* ===================================== */
 /* ========================================================== */
@@ -438,7 +484,7 @@ body {
 .about__content__item {
   border-radius:var(--brd-radius);
   background: #FFE0CB;
-  padding:29px 25px;
+  padding:29px 20px;
 
   display: flex;
   align-items: center;
