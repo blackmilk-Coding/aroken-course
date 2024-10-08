@@ -561,18 +561,126 @@ body {
 
 }
 
-.tabs__content{
-  background-color: #1F1711;
-  margin-bottom: 10px;
-  height:200px;
-  display: none;
-  justify-content: center;
-  align-items: center;
 
+.tabs-content {
+  padding:30px 40px;
+  background-color: transparent;
+  width:100%;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .tabs__content--active{
   display: flex;
+}
+.accordion-list__item__inner{
+  border:1px solid var(--accent-color);
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.accordion-list__item{
+  border:1px solid var(--accent-color);
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.accordion-list__item:last-child{
+  margin-bottom: 0;
+}
+
+
+.title-accordion{
+  font-size: 42px;
+  line-height: .9;
+}
+
+.tab-content__icon{
+  padding:10px;
+  width:36px;
+  height:36px;
+  border:1px solid var(--accent-color);
+  border-radius: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition:var(--transition);
+}
+.tab-content__icon,
+.tab-content__icon svg{
+  transition:var(--transition);
+}
+
+
+.tabs-content:hover  .tab-content__icon svg{
+  transform: rotate(90deg);
+}
+.tabs-content:hover  .tab-content__icon{
+  background-color: var(--accent-color);
+}
+
+.tabs-content:hover .tab-content__icon path{
+  fill:var(--body-color);
+}
+.accordion-list__item--opened .tab-content__icon path{
+  fill:var(--body-color);
+}
+.accordion-list__item--opened   .tab-content__icon{
+  background-color: var(--accent-color);
+}
+.accordion-list__item--opened  .tab-content__icon svg{
+  transform: rotate(90deg);
+}
+
+.accordion-list__content {
+  max-height: 0;
+  overflow: hidden;
+
+  transition: var(--transition);
+}
+
+
+.accordion-content {
+  display: flex;
+  gap:80px;
+  padding: 0px 30px 40px;
+  transition: var(--transition);
+
+}
+.accordion-content__col:first-child{
+  max-width: 507px;
+  width:100%;
+}
+
+.accordion-content__col__text{
+  max-width: 274px;
+  width:100%;
+}
+.accordion-content__col > h6 {
+ margin-bottom: 20px;
+color:  #CEAAD0;
+text-transform: uppercase;
+}
+.accordion-content__list {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+}
+.accordion-content__list__item{
+  display: flex;
+  gap:8px;
+}
+.accordion-content__icon{
+  width:24px; 
+  height:24px;
+  border:1px solid var(--general-text);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* ========================================== */
 
@@ -841,7 +949,7 @@ body {
     grid-column: 1 / 4;
   }
 
-  .about--heading{
+  .about-heading{
     align-self: center;
     text-align: center; 
     grid-column: 1 / 4;

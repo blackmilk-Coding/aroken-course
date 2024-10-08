@@ -4,7 +4,6 @@ const modalClosed = document.querySelector('.modal__closed')
 const button = document.querySelector('.about__img-button')
 
 
-
 button.addEventListener('click', (event) => {
   event.preventDefault()
   body.classList.add('body--open-modal')
