@@ -1,7 +1,7 @@
 const tabControlsButton = document.querySelector('.tab-controls__list')
 const tabControlsLinks = document.querySelectorAll('.tab-controls__link')
-const tabsContent = document.querySelectorAll('.tabs-content')
-
+const tabsContent = document.querySelectorAll('.accordion-list__item')
+const AccordionListItem = document.querySelectorAll('.accordion-list__item')
 
 tabControlsButton.addEventListener('click', event => {
   event.preventDefault();
@@ -20,20 +20,9 @@ tabControlsButton.addEventListener('click', event => {
     if(clickLink.classList.contains('tab-controls__link--active')){
       const NumberTab = clickLink.getAttribute('href')
       for(let i=0; i < tabsContent.length; i++){
-
         if(tabsContent[i].classList.contains('tabs__content--active')){
           tabsContent[i].classList.remove('tabs__content--active')
-        }
-
-        if(tabsContent[i].id == NumberTab){
-          tabsContent[i].classList.add('tabs__content--active')
-        }
-      }
-      
-      for(let i=0; i < tabsContent.length; i++){
-
-        if(tabsContent[i].classList.contains('tabs__content--active')){
-          tabsContent[i].classList.remove('tabs__content--active')
+          
         }
 
         if(tabsContent[i].id == NumberTab){
