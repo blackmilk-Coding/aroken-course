@@ -557,132 +557,143 @@ body {
   background:#FFE0CB;
   box-shadow:none;
 }
+
+.tab-content {
+  display: none;
+}
+
+.tab-content--show {
+  display: block;
+}
+
+
 .programm-tabs {
 
 }
 
-.accordion-list__item{
-  display: none;
-}
+.accordion-list__item {
+  border: 1px solid var(--accent-color);
+  border-radius: var(--brd-radius);
 
-
-.tabs__content--active{
-  display:block;
-}
-
-
-.accordion-list__item__inner{
-  border:1px solid var(--accent-color);
-  border-radius: 20px;
   margin-bottom: 30px;
 }
 
-.accordion-list__item__inner:last-child{
+.accordion-list__item:last-child {
   margin-bottom: 0;
 }
 
+.accordion-list__item--opened {}
 
-.title-accordion{
-  font-size: 42px;
-  line-height: .9;
-}
+.accordion-list__control {
+  padding: 41px 30px;
+  width: 100%;
+  background: transparent;
+  text-align: left;
 
-.tabs-content {
-  padding:30px 40px;
-  background-color: transparent;
-  width:100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  gap: 15px;
+
+  font-family: 'Gabriola';
+  font-size: 42px;
+  line-height: 90%;
+  color: var(--accent-text);
+  transition: var(--transition);
 }
 
-.tab-content__icon{
-  padding:10px;
-  width:36px;
-  height:36px;
-  border:1px solid var(--accent-color);
-  border-radius: 100%;
+.accordion-list__item--opened .accordion-list__control {
+  padding-bottom: 20px;
+}
 
+.accordion-list__control-title {}
+
+.accordion-list__control-icon {
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid var(--accent-color);
+  border-radius: 50%;
+  flex-shrink: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
-  transition:var(--transition);
+  transition: var(--transition);
 }
-.tab-content__icon,
-.tab-content__icon svg{
-  transition:var(--transition);
+.accordion-list__control-icon svg {
+  margin-left: 2px;
 }
 
+.accordion-list__control-icon path {
+  transition: var(--transition);
+}
 
-.tabs-content:hover  .tab-content__icon svg{
+.accordion-list__control:hover .accordion-list__control-icon {
   transform: rotate(90deg);
-}
-.tabs-content:hover  .tab-content__icon{
-  background-color: var(--accent-color);
+  background: var(--accent-color);
 }
 
-.tabs-content:hover .tab-content__icon path{
-  fill:var(--body-color);
+.accordion-list__control:hover .accordion-list__control-icon path {
+  fill: var(--body-color);
 }
-.accordion-list__item--opened .tab-content__icon path{
-  fill:var(--body-color);
-}
-.accordion-list__item--opened   .tab-content__icon{
-  background-color: var(--accent-color);
-}
-.accordion-list__item--opened  .tab-content__icon svg{
+
+.accordion-list__item--opened .accordion-list__control-icon {
   transform: rotate(90deg);
+  background: var(--accent-color);
+}
+
+.accordion-list__item--opened .accordion-list__control-icon path {
+  fill: var(--body-color);
 }
 
 .accordion-list__content {
   max-height: 0;
   overflow: hidden;
-
   transition: var(--transition);
 }
-
 
 .accordion-content {
+  padding: 0 30px 40px;
   display: flex;
-  gap:80px;
-  padding: 0px 30px 40px;
-  transition: var(--transition);
-
+  gap: 80px;
 }
-.accordion-content__col:first-child{
+
+.accordion-content__col:first-child {
   max-width: 507px;
-  width:100%;
+  width: 100%;
 }
 
-.accordion-content__col__text{
-  max-width: 274px;
-  width:100%;
+.accordion-content__title {
+  text-transform: uppercase;
+  line-height: 1.6;
+  color: #CEAAD0;
+  margin-bottom: 20px;
 }
-.accordion-content__col > h6 {
- margin-bottom: 20px;
-color:  #CEAAD0;
-text-transform: uppercase;
-}
-.accordion-content__list {
+
+.accordion-content__list {}
+
+.accordion-content__item {
+  margin-bottom: 20px;
   display: flex;
-  flex-direction: column;
-  gap:20px;
 }
-.accordion-content__list__item{
-  display: flex;
-  justify-items: center;
-  gap:8px;
+
+.accordion-content__item:last-child {
+  margin-bottom: 0;
 }
-.accordion-content__icon{
-  width:24px; 
-  height:24px;
-  border:1px solid var(--general-text);
+
+.accordion-content__icon {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #CEAAD0;
   border-radius: 50%;
-  display: flex;
-  flex-shrink: 0;
-  justify-content: center;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.accordion-content__text {
+  max-width: 274px;
 }
 /* ========================================== */
 

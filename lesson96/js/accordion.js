@@ -1,37 +1,33 @@
-const accordionList = document.querySelector('.accordion-list')
+const accordionLists = document.querySelectorAll('.accordion-list');
+(function(){
+  accordionLists.forEach(el => {
 
-accordionList.addEventListener('click', event => {
-  const target = event.target
-  const button = target.closest('.tabs-content')
+    el.addEventListener('click', (e) => {
 
+        const accordionList = e.currentTarget
+        const accordionOpenedItem = accordionList.querySelector('.accordion-list__item--opened')
+        const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
 
-  if(button){
-    event.preventDefault();
-    const listAccordion = button.parentElement
-    const AccordionContentBlock = button.nextElementSibling
-    const contentHeight = AccordionContentBlock.firstElementChild
-    const openItem = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
-
-
-
-    if(openItem){
-      openItem.style.maxHeight = 0
-      openItem.classList.remove('accordion-list__item--opened')
-    }
-
-
-    listAccordion.classList.toggle('accordion-list__item--opened')
+        const accordionControl = e.target.closest('.accordion-list__control');
 
     
-    if(listAccordion.classList.contains('accordion-list__item--opened')){
-      AccordionContentBlock.style.maxHeight = contentHeight.scrollHeight + "px"
-    }
-    else{
-      AccordionContentBlock.classList.remove('accordion-list__item--opened')
-      AccordionContentBlock.style.maxHeight = 0
-    }
-  }else{
-    return
-  }
-  
-})
+        if (!accordionControl) return
+        const accordionItem = accordionControl.parentElement;
+        const accordionContent = accordionControl.nextElementSibling;
+
+        if (accordionOpenedItem && accordionItem != accordionOpenedItem) {
+            accordionOpenedItem.classList.remove('accordion-list__item--opened');
+            accordionOpenedContent.style.maxHeight = null;
+        }
+        accordionItem.classList.toggle('accordion-list__item--opened');
+
+        if (accordionItem.classList.contains('accordion-list__item--opened')) {
+            accordionContent.style.maxHeight = accordionContent.scrollHeight + 'px';
+        } else {
+            accordionContent.style.maxHeight = null;
+        }
+
+    });
+
+});
+})()
