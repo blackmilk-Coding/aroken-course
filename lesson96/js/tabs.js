@@ -8,19 +8,18 @@ tabControlsButton.addEventListener('click', event => {
 
   let target = event.target
   let clickLink = target.closest('.tab-controls__link')
-  console.log(clickLink)
+
   if(clickLink){
     for(let i=0; i < tabControlsLinks.length; i++){
-      if(tabControlsLinks[i].classList.contains('tab-content--show')){
-        tabControlsLinks[i].classList.remove('tab-content--show')
+      if(tabControlsLinks[i].classList.contains('tab-controls__link--active')){
+        tabControlsLinks[i].classList.remove('tab-controls__link--active')
       }
   
-      clickLink.classList.add('tab-content--show')
-
+      clickLink.classList.add('tab-controls__link--active')
 
     }
 
-    if(clickLink.classList.contains('tab-content--show')){
+    if(clickLink.classList.contains('tab-controls__link--active')){
       const NumberTab = clickLink.getAttribute('href')
       for(let i=0; i < tabsContent.length; i++){
         if(tabsContent[i].classList.contains('tab-content--show')){
