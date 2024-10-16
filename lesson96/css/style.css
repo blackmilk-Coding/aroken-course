@@ -439,8 +439,6 @@ justify-self: center;
 
 }
 
-.gallery__wrapper{
-}
 .gallery__button,
 .gallery__button path{
   transition:var(--transition);
