@@ -32,7 +32,17 @@ body {
   margin: 50px 0 140px 0;
 
 }
-.header,.main__about, .main__program, .main__gallery{
+.header{
+  margin-bottom:140px;
+}
+.main__about{
+  margin-bottom:140px;
+}
+.main__programm{
+  margin-bottom:140px;
+} 
+
+.main__gallery{
   margin-bottom:140px;
 }
 

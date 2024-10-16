@@ -373,7 +373,7 @@
 .programm__price-value {
   color: #312C27;
   font-family: Gabriola;
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 400;
   line-height: .9;
 }
@@ -418,16 +418,34 @@ justify-self: center;
 
 .gallery__nav {
   display: flex;
-  gap:30px;
+  gap:98px;
+  position: relative;
   color:#312C27;
   font-family: Gabriola;
   font-size: 42px;
   line-height: .9;
 }
 .gallery__pagination{
-  display: flex;
+  display:flex;
+
+  /* Чтобы кнопки не прыгали при смене текста */
+  position: absolute;
+  top:50%;
+  left:50%;
+  bottom:auto;
+  width:auto;
+  transform: translate(-50%, -50%);
+  /* ---------------------------------------- */
 
 }
+
+.gallery__wrapper{
+}
+.gallery__button,
+.gallery__button path{
+  transition:var(--transition);
+}
+
 .gallery__button{
   width: 36px;
   height: 36px;
@@ -438,12 +456,26 @@ justify-self: center;
   align-items: center;
   justify-content: center;
   background-color: transparent;
+  transition:var(--transition);
+}
+.gallery__button:hover{
+  background-color: var(--accent-color);
 }
 
+.gallery__button:hover path{
+  fill: var(--body-color);
+}
 .gallery__slide img{
+  max-width: 100%;
   border-radius: 20px;
 }
 
+.swiper-button-disabled.gallery__button{
+  border-color: #E1D9E1;
+}
+.swiper-button-disabled.gallery__button path{
+  fill:#E1D9E1;
+}
 /* ==================================================== */
 
 
@@ -560,6 +592,7 @@ justify-self: center;
   .accordion-list__item {  
     margin-bottom: 15px;
   }
+
   /* =============================== */
   
   .body--open-list .header-nav{
@@ -578,7 +611,25 @@ justify-self: center;
     z-index: 11;
   }
 
+  /* =============================== */
+  .gallery__top {
+    grid-template-columns: none;
+  
+  }
 
+  .gallery__image{
+    display: none;
+  }
+
+  .gallery__info{
+    flex-direction: column;
+    gap:40px;
+  }
+
+  .gallery__text{
+    max-width: none;
+  }
+  /* =============================== */
   .footer__inner{
     grid-template-columns:1fr;
     grid-template-rows:1fr;
