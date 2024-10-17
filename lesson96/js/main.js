@@ -50,12 +50,13 @@ const swipere = new Swiper('.testimonials__swiper', {
   },
 
   breakpoints: {
-    901:{
-      slidesPerView: 1.5,
-    },
-    1201:{
+    1200:{
       slidesPerView: 2.1,
     },
+
+    900:{
+      slidesPerView: 1.5,
+    }
 
 
   },
