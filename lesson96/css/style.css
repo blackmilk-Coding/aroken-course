@@ -579,8 +579,7 @@ justify-self: center;
   width:24px;
   height:24px;
 }
-.testimonials__content {
-}
+
 .testimonials__quote {
   color: #1F1711;
   font-family: Gabriola;
@@ -606,10 +605,81 @@ justify-self: center;
   background-color: var(--accent-color);
 
 }
+
+/* ====================================================*/
+
+.contact{
+  background: no-repeat url("../img/decor/bg-contact.png") 50% 100%;
+
+  width:100%;
+
+  padding:140px 0 140px 0;
+}
+
+.contact__inner {
+  display: flex;
+  gap:84px;
+  align-items: end;
+}
+.contact__image img {
+  max-width: 100%;
+}
+.contact__form {
+  max-width: 420px;
+}
+.contact__heading {
+  margin-bottom: 40px;
+}
+.contact__title {
+  margin-bottom: 20px;
+}
+
+.contact__field{
+  margin-bottom: 10px;
+}
+.field__input--contact{
+  background-color: transparent;
+}
+
+
+.contact__input {
+  padding:19px 41px 20px 19px;
+  border: 1px solid #AC907A;
+  width:100%;
+  color: #AC907A;
+  font-size: 16px;
+  line-height: 1.5;
+  border-radius:var(--brd-radius);
+  background-color: transparent;
+  margin-bottom: 20px;
+
+  transition: var(--transition);
+
+}
+
+.contact__input:hover{
+  border:1px solid #FFA55C;
+  color:#FFA55C;
+}
+
+.contact__input:hover::placeholder{
+  color:#FFA55C;
+  transition: var(--transition);
+}
+
+
+.contact__check-label {
+  margin-bottom: 20px;
+  display: flex;
+  gap:5px;
+}
+
 /* ==================================================== */
 .hero__img-button:hover::before{
   opacity: 1;
 }
+
+
 
 
 
@@ -921,8 +991,6 @@ justify-self: center;
   
   /* ====================== */
 }
-
-
 
 @media (max-width:400px){
   .about__img-control {

@@ -214,7 +214,7 @@ body {
   top: -12px;
   left: 21px;
   font-size: 11px;
-
+  white-space: nowrap;
   visibility: hidden;
   opacity: 0;
 
