@@ -11,6 +11,11 @@
   --brd-radius:20px;
 }
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
 /* ===================================== */
 
 .modal {
@@ -608,78 +613,115 @@ justify-self: center;
 
 /* ====================================================*/
 
-.contact{
-  background: no-repeat url("../img/decor/bg-contact.png") 50% 100%;
-
-  width:100%;
-
-  padding:140px 0 140px 0;
+.contact {
+  padding: 140px 0;
+  background: url("../img/decor/bg-contact.png") 50% 0% / cover no-repeat;
 }
-
 .contact__inner {
   display: flex;
-  gap:84px;
   align-items: end;
+  gap: 84px;
+  position: relative;
 }
-.contact__image img {
-  max-width: 100%;
+.contact__inner::before {
+  content: url("../img/decor/berries.png");
+  position: absolute;
+  top: -4%;
+  left: 0;
 }
-.contact__form {
+.contact__inner::after {
+  content: url("../img/decor/berries-2.png");
+  position: absolute;
+  top: 4%;
+  right: 0;
+}
+.contact__img img {
+  width: 100%;
+  filter: drop-shadow(0px 4px 30px #c6b0a14d);
+}
+.contact__body {
   max-width: 420px;
-}
-.contact__heading {
-  margin-bottom: 40px;
 }
 .contact__title {
   margin-bottom: 20px;
 }
-
-.contact__field{
+.contact__text {
+  margin-bottom: 40px;
+}
+.contact__form {
+}
+.contact__label {
   margin-bottom: 10px;
 }
-.field__input--contact{
-  background-color: transparent;
-}
-
-
 .contact__input {
-  padding:19px 41px 20px 19px;
+  display: block;
+  width: 100%;
+  background: #00000000;
   border: 1px solid #AC907A;
-  width:100%;
-  color: #AC907A;
-  font-size: 16px;
-  line-height: 1.5;
   border-radius:var(--brd-radius);
-  background-color: transparent;
+  padding: 19px 42px 19px 28px;
+  font-size: 16px;
+  transition: var(--transition);
   margin-bottom: 20px;
-
-  transition: var(--transition);
-
 }
 
-.contact__input:hover{
-  border:1px solid #FFA55C;
-  color:#FFA55C;
+.contact__input:hover {
+  border-color: var(--accent-color);
 }
 
-.contact__input:hover::placeholder{
-  color:#FFA55C;
+.contact__input::placeholder {
+  color: #AC907A;
   transition: var(--transition);
 }
 
+.contact__input:hover::placeholder {
+  color: var(--accent-color);
+}
 
 .contact__check-label {
-  margin-bottom: 20px;
   display: flex;
-  gap:5px;
+  align-items: start;
+  gap: 5px;
+  max-width: 288px;
+  font-size: 13px;
+  margin-bottom: 20px;
 }
-
-/* ==================================================== */
-.hero__img-button:hover::before{
+.contact__check-label a {
+  text-decoration: underline;
+  transition: var(--transition);
+}
+.contact__check-label a:hover {
+  color: var(--accent-color);
+}
+.contact__checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid #AC907A;
+  transition: var(--transition);
+  border-radius: 4px;
+  flex-shrink: 0;
+  cursor: pointer;
+  position: relative;
+}
+.contact__checkbox::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("../img/icons/check.svg") 50% 50% no-repeat;
+  opacity: 0;
+  transition: var(--transition);
+}
+.contact__checkbox:hover {
+  border: 1.5px solid var(--accent-color);
+}
+.contact__checkbox:checked {
+  background: var(--accent-color);
+  border: 1.5px solid var(--accent-color);
+}
+.contact__checkbox:checked::before {
   opacity: 1;
 }
-
-
 
 
 
@@ -745,6 +787,19 @@ justify-self: center;
     grid-column: 1/-1;
   }
   
+  /* ============================================= */
+  .contact__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__inner::before{
+    display: none;
+  }
+  .contact__img{
+    display: none;
+  }
   /* ============================================= */
   .footer__inner{
     grid-template-columns:repeat(3,1fr);
@@ -885,6 +940,9 @@ justify-self: center;
 
 
 @media (max-width:800px){
+  html{
+    scroll-padding-top: 50px;
+  }
   .hero__inner{
     display: flex;
     flex-direction: column;
@@ -989,6 +1047,16 @@ justify-self: center;
   }
 
   
+  /* ====================== */
+
+  /* ====================== */
+
+  
+  .contact__inner::after,.contact__inner::after{
+    display: none;
+  }
+
+
   /* ====================== */
 }
 

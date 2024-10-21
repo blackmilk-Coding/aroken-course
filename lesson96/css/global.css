@@ -32,19 +32,6 @@ body {
   margin: 50px 0 140px 0;
 
 }
-/* .header{
-  margin-bottom:140px;
-}
-.main__about{
-  margin-bottom:140px;
-}
-.main__programm{
-  margin-bottom:140px;
-} 
-
-.main__gallery{
-  margin-bottom:140px;
-} */
 .header,
 .main__about,
 .main__programm,
@@ -192,21 +179,17 @@ body {
 .field{
   position: relative;
 }
-.field__input {
+.field__input{
   padding:19px 41px 20px 19px;
   border: 1px solid #AC907A;
   width:100%;
-
-
   color: #AC907A;
+  background-color: transparent;
   font-size: 16px;
   line-height: 1.5;
   border-radius:var(--brd-radius);
-
   margin-bottom: 10px;
-
   transition: var(--transition);
-
 }
 .field span{
   color: #AC907A;

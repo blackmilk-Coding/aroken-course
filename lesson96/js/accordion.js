@@ -9,7 +9,7 @@ const accordionLists = document.querySelectorAll('.accordion-list');
         const accordionOpenedContent = accordionList.querySelector('.accordion-list__item--opened .accordion-list__content')
 
         const accordionControl = e.target.closest('.accordion-list__control');
-
+        e.preventDefault()
     
         if (!accordionControl) return
         const accordionItem = accordionControl.parentElement;
