@@ -1,0 +1,21 @@
+:root{
+  --general-text:#2E2C34;
+}
+
+
+body {
+  font-family: "roboto", sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+  color: var(--general-text);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.6px;
+}
+
+.container{
+  max-width:1039px;
+  height:100%;
+  margin:0 auto;
+}

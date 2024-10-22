@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="html-logo.svg" type="image/x-icon">
+  <title>синтаксис css</title>
+</head>
+<body>
+  <header>
+      шапка сайта
+  </header>
+  <main>
+    <div class="blog">
+        часть для статей
+    </div>
+
+    <div class="sidebar">
+      боковая панель
+    </div>
+  </main>
+
+  <footer>
+      подвал сайта
+  </footer>
+<body>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    width: 100%;
+    height: 100%;
+  }
+  header{
+    width: 100%;
+    height: 70px;
+    background-color: aqua;
+  }
+  main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+  .blog , .sidebar{
+    text-align: center;
+    height: 80%;
+  }
+  .blog {
+    background-color: bisque;
+    width: 70%;
+  }
+  .sidebar {
+    background-color: #474541;
+    width: 30%;
+  }
+
+
+  footer{
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    height:70px;
+    background-color: aqua;
+  }
+</style>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="html-logo.svg" type="image/x-icon">
+  <title>Блочные, строчные элементы</title>
+</head>
+<body>
+
+  <div>
+    Блочный элемент занимает всю ширину сайта, независимо от контента внутри него
+  </div>
+
+  <span>
+    строчный элемент, занимает ширину под размер контента в нём
+  </span>
+  <br>
+  <br>
+
+  <div class="block-inline">
+    <span>
+      В блочный элемент, можно вкладывать строчный элемент
+    </span>
+  </div>
+
+  <br>
+  <br>
+
+
+  <span class="inline-block">
+    <div>
+      Но в строчный элемент, нельзя вкладывать блочный элемент
+    </div>
+  </span>
+
+  <br>
+
+  <span>
+    Так-же, строчным элементам, нельзя задавать высоту и ширину, так-же задавать отступы
+  </span>
+
+
+  <br>
+  <br>
+
+  <div>Каждый блочный элемент начинается с новой строки</div>
+  <div>Каждый блочный элемент начинается с новой строки</div>
+  
+  <br>
+  <br>
+
+  <span>Каждый строчный элемент идёт в одной строке</span>
+  <span>Каждый строчный элемент идёт в одной строке</span>
+ 
+<style>
+  div{
+    background-color: rgb(64, 87, 64);
+  }
+
+  span{
+    background-color: red;
+  }
+
+  .block-inline{
+    padding:20px;
+  }
+
+  .inline-block{
+    color: red;
+  }
+</style>
+</body>
+</html>
