@@ -10,7 +10,7 @@
 
 
 @font-face {
-  font-family: 'roboto';
+  font-family: 'roboto-medium';
   src: local('Roboto Roboto-Medium.woff'), local('Roboto-Medium.woff'),
       url('../fonts/Roboto-Medium.woff') format('woff2'),
       url('../fonts/Montserrat-Regular.woff') format('woff');

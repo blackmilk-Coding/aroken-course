@@ -1,14 +1,8 @@
-:root{
-  --general-text:#2E2C34;
-  --link-color:#e0dbdb;
-}
-
-
 body {
   font-family: "roboto-regular", sans-serif;
   line-height: 1.5;
   font-size: 16px;
-  color: var(--general-text);
+  color: var(--main-text);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -19,4 +13,64 @@ body {
   max-width:1039px;
   height:100%;
   margin:0 auto;
+}
+/* mobile menu*/
+
+.burger-menu{
+  display: none;
+  cursor: pointer;
+  height:50px;
+}
+
+.burger-menu__icon{
+  display: none;
+  position: relative;
+  width:50px;
+  height:5px;
+  background-color: #251b41;
+}
+
+.burger-menu__icon::after,
+.burger-menu__icon::before{
+  content: "";
+  display: block;
+  width:100%;
+  height:5px;
+  background-color: #251b41;
+  position: absolute;
+}
+.burger-menu__icon::after{
+  top:-12px;
+}
+.burger-menu__icon::before{
+  top:12px;
+}
+/* ------------------ */
+
+/* get started button */
+.main-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  padding:12px 50px;
+  color:var(--other-text);
+  background: #7140EB;
+  border-radius: 50px;
+  font-size: 18px;
+  width:100%;
+
+  white-space: nowrap;
+
+  transition: all .4s;
+}
+
+.main-link:hover{
+  background: #462b8a;
+  color:#bbb6b6;
+}
+
+.main-link:active{
+  background: #251b41;
+  color:#757272;
 }

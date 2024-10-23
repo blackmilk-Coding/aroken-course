@@ -9,7 +9,9 @@
 <body>
   <header class="header">
     <div class="header-top">
-      <img src="assets/images/icons/logo.svg" alt="">
+      <a href="index.html">
+        <img src="assets/images/icons/logo.svg" alt="">
+      </a>
       <nav class="header-nav">
         <ul class="header-nav__list">
           <li class="header-nav__list-item">
@@ -25,18 +27,26 @@
             <a href="#" class="header__link">en</a>
           </li>
           <li class="header-nav__list-item">
-            <a href="#" class="header__button main-link">start now</a>
+            <a href="#" class="main-link">start now</a>
           </li>
         </ul>
       </nav>
+
+      <div class="burger-menu">
+        <div class="burger-menu__icon">
+        </div>
+      </div>
     </div>
 
-    <div class="header-hero">
-      <h1>
+    <div class="header-hero hero">
+      <h1 class="hero__heading">
         Your future is electric
       </h1>
-      <p>Get your own ebike or emoped</p>
-      <p>with our flexible subscription</p>
+      <div class="hero__text">
+        <p class="hero__text__paragraph">Get your own ebike or emoped</p>
+        <p>with our flexible subscription</p>
+        <a href="#" class="hero__main-link main-link">start now</a>
+      </div>
     </div>
   </header>
 
@@ -44,8 +54,110 @@
 
   </main>
 
-  <footer>
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__сol">
+        <div class="footer__сol-text">
+          <h3 class="footer__heading">
+            Stay up to speed
+          </h3>
+          <p class="footer__сol-text">
+            Sign up to get the latest Dance offers, updates, and tips straight to your inbox.
+          </p>
+        </div>
+        <label class="footer__field">
+          <input class="footer__field-input" type="email" placeholder="your@email.de">
+          <img class="footer__field-icon" src="assets/images/icons/arrow-right.svg">
+        </label>
+        <p class="footer__сol-text">
+          By checking this box, you allow Dance to collect data
+          relating to the Dance newsletter, including whether
+          it has been opened and clicked through. For more information.
+        </p>
+      </div>
 
+      <ul class="footer-list">
+        <li class="footer-list__item">
+          Menu
+        </li>
+
+        <li class="footer-list__item">
+          <a href="#">Rides</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#">Concierge</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#">For Business</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#">Start now</a>
+        </li>
+      </ul>
+
+      <ul class="footer-list">
+        <li class="footer-list__item">
+          Products
+        </li>
+
+        <li class="footer-list__item">
+          <a href="#">Ebikes</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#">Moped</a>
+        </li>
+      </ul>
+      <ul class="footer-list">
+        <li class="footer-list__item">
+          Company
+        </li>
+
+        <li class="footer-list__item">
+          <a href="#">About</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#">Blog</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#">Press</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#">FAQ</a>
+        </li>
+      </ul>
+      <ul class="footer-list footer-list__last">
+        <li class="footer-list__item">
+          Legal
+        </li>
+        <li class="footer-list__item">
+          <a href="#">Privacy</a>
+        </li>
+
+        <li class="footer-list__item">
+          <a href="#">Imprint</a>
+        </li>
+        <li class="footer-list__item">
+          <a href="#">Cancel subscription</a>
+        </li>
+      </ul>
+
+      <div class="footer__social">
+        <ul class="footer__social__list">
+          <li class="footer__social__list__item">
+            <a href="#"><img src="assets/images/icons/Frame.svg" alt=""></a>
+          </li>
+          <li class="footer__social__list__item">
+            <a href="#"><img src="assets/images/icons/Frame-1.svg" alt=""></a>
+          </li class="footer__social__list__item">
+          <li class="footer__social__list__item">
+            <a href="#"><img src="assets/images/icons/Frame-2.svg" alt=""></a>
+          </li>
+          <li class="footer__social__list__item">
+            <a href="#"><img src="assets/images/icons/link.svg" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
