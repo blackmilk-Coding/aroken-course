@@ -57,7 +57,6 @@
 /* products */
 .products__list{
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap:16px;
 }
@@ -218,6 +217,9 @@
 }
 
 @media (max-width:320px){
+  .container{
+    padding:5px;
+  }
   .hero__text__paragraph{
     margin-bottom:20px;
   }

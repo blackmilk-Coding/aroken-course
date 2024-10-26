@@ -2,9 +2,18 @@
   background: linear-gradient(120deg, rgba(192,163,209,1) 0%, rgba(187,61,197,1) 70%); /*Сделать нормальный градиент*/
   padding:100px;
   color:var(--other-text);
+  display: flex;
+  justify-content: center;
+  
 }
 
 .footer__inner{
+
+  flex-shrink: 0;
+  max-width: 1300px;
+  width:100%;
+
+
   display: grid;
   grid-template-columns:1.5fr .9fr .5fr .5fr .5fr;
   justify-items: center;
