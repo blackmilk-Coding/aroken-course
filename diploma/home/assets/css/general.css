@@ -14,10 +14,13 @@ body {
 }
 
 .container{
-  padding:112px 123px 112px 123px;
+  max-width:1310px;
   height:100%;
+  padding:180px 20px;
   margin:0 auto;
 }
+
+
 .section-heading h2{
   font-size: 67px;
   line-height: 66px;
