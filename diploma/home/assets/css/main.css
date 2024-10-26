@@ -8,12 +8,16 @@
   --other-text:#e0dbdb;
   --hover-link:#bbb6b6;
   --active-link:#757272;
-  --link-transition:all .4s;
+  --transition:all .4s;
+
 }
 
 
 
 @media (max-width:700px){
+  .header__logo{
+    z-index: 3;
+  }
   .header-nav{
     display: none;
   }
@@ -22,13 +26,13 @@
     font-size: 80px;
   }
 
-  .burger-menu{
+  .burger-button{
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .burger-menu__icon{
+  .burger-button__icon{
     display: block;
   }
 }

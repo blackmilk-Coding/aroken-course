@@ -1,6 +1,5 @@
 .footer{
   background: linear-gradient(120deg, rgba(192,163,209,1) 0%, rgba(187,61,197,1) 70%); /*Сделать нормальный градиент*/
-  width:100%;
   padding:85px 140px 92px 76px;
   color:var(--other-text);
 }
