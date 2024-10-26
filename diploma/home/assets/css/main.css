@@ -13,7 +13,22 @@
 }
 
 
+@media(max-width:1000px){
+  .footer__inner{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    align-items: center;
+    gap:30px;
+  }
 
+  .footer-list{
+    text-align: center;
+  }
+  .footer__сol--first{
+    grid-column: 1 / -1;
+  }
+
+}
 @media (max-width:700px){
   .header__logo{
     z-index: 3;
@@ -38,6 +53,16 @@
 }
 
 @media (max-width:450px) {
+  .footer{
+    padding: 20px;
+  }
+  .footer__inner{
+    grid-template-columns:.5fr .5fr;
+    align-items: baseline;
+    justify-items: stretch;
+  }
+
+
   .hero__heading{
     max-width: 350px;
     font-size: 60px;

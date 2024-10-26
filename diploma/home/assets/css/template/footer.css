@@ -1,13 +1,14 @@
 .footer{
   background: linear-gradient(120deg, rgba(192,163,209,1) 0%, rgba(187,61,197,1) 70%); /*Сделать нормальный градиент*/
-  padding:85px 140px 92px 76px;
+  padding:100px;
   color:var(--other-text);
 }
 
 .footer__inner{
   display: grid;
-  grid-template-columns: repeat(5,1fr);
   grid-template-columns:1.5fr .9fr .5fr .5fr .5fr;
+  justify-items: center;
+  gap:40px;
 }
 
 .footer__heading {
@@ -16,8 +17,6 @@
   margin-bottom: 18px;
 }
 .footer__сol{
-  max-width: 330px;
-  margin-right: 142px;
 }
 .footer__сol-text:not(:last-child){
   font-size: 16px;
@@ -26,7 +25,6 @@
 
 .footer__field{
   width:100%;
-  max-width: 314px;
   display: block;
   margin-bottom: 25px;
   position: relative;
@@ -44,10 +42,6 @@
 }
 .footer__field-input::placeholder{
   color: #49464fcc;
-}
-
-.footer-list__last {
-  margin-right: 30px;
 }
 .footer-list__item{
   white-space: nowrap;
