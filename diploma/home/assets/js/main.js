@@ -7,13 +7,16 @@
   function burgerInit(e) {
     const body = document.body 
     const burgerIcon = e.target.closest('.burger-button')
+    
 
-    if(!document.body.classList.contains('body--modal-open') && !document.body.classList.contains('body--scroll-lock')){
-      body.classList.add('body--scroll-lock')
-      body.classList.add('body--modal-open')
-    }else{
-      body.classList.remove('body--scroll-lock')
-      body.classList.remove('body--modal-open')
+    if(burgerIcon){
+      if(!document.body.classList.contains('body--modal-open') && !document.body.classList.contains('body--scroll-lock')){
+        body.classList.add('body--scroll-lock')
+        body.classList.add('body--modal-open')
+      }else{
+        body.classList.remove('body--scroll-lock')
+        body.classList.remove('body--modal-open')
+      }
     }
   
 
