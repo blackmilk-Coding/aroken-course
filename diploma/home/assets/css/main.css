@@ -92,6 +92,9 @@
   max-width: 180px;
 }
 /* ------------- */
+
+
+
 @media(max-width:1200px) {
   /* deliver */
   .deliver__inner{
@@ -158,7 +161,7 @@
   /* ================ */
   /* deliver */
   .deliver{
-    padding:100px 0 73px 20px;
+    padding:0px;
   }
   .deliver__list{
     grid-template-columns:repeat(2,1fr);
@@ -218,7 +221,7 @@
 
 @media (max-width:320px){
   .container{
-    padding:5px;
+    padding:10px;
   }
   .hero__text__paragraph{
     margin-bottom:20px;
