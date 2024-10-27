@@ -1,6 +1,6 @@
 .footer{
   background: linear-gradient(120deg, rgba(192,163,209,1) 0%, rgba(187,61,197,1) 70%); /*Сделать нормальный градиент*/
-  padding:40px;
+  padding:50px;
   color:var(--other-text);
   display: flex;
   justify-content: center;
@@ -25,24 +25,24 @@
   line-height: 34px;
   margin-bottom: 18px;
 }
+.footer__сol{
+}
 .footer__сol-text:not(:last-child){
   font-size: 16px;
   margin-bottom: 30px;
 }
 
 .footer__field{
+  width:100%;
   display: block;
-  width:314px;
   margin-bottom: 25px;
   position: relative;
 }
 
 .footer__field-input{
-  width:314px;
-  position: relative;
-  display: block;
   padding:18px 14px 16px;
   border-radius: 10px;
+  width:100%;
 }
 .footer__field-icon{
   position: absolute;
