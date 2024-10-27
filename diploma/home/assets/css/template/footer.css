@@ -31,16 +31,18 @@
 }
 
 .footer__field{
-  width:100%;
   display: block;
+  width:314px;
   margin-bottom: 25px;
   position: relative;
 }
 
 .footer__field-input{
+  width:314px;
+  position: relative;
+  display: block;
   padding:18px 14px 16px;
   border-radius: 10px;
-  width:100%;
 }
 .footer__field-icon{
   position: absolute;
