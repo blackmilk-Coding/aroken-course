@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/plugins/swiper-bundle.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <title>home template</title>
 </head>
@@ -52,8 +53,8 @@
     </div>
   </header>
 
-  <main>
-    <section class="deliver">
+  <main class="main">
+    <section class="main__deliver deliver">
       <div class="container">
         <h2 class="deliver-heading">
           How it works
@@ -85,84 +86,150 @@
       </div>
     </section>
 
-    <section class="products">
+    <section class="main__products products">
       <div class="container">
-        <div class="section-heading">
-          <h2>
-            Move your way
-          </h2>
-          <p>Choose the electric ride that suits your lifestyle.</p>
+        <div class="products__top">
+          <div class="section-heading">
+            <h2>
+              Move your way
+            </h2>
+            <p>Choose the electric ride that suits your lifestyle.</p>
+          </div>
+  
+          <nav class="products__nav">
+            <button class="products__button products__button-prev">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.51202 1.02242L2.53602 6.99842L8.51202 12.9744L7.50402 13.9824L0.52002 6.99842L7.50402 0.0144217L8.51202 1.02242Z" fill=" #7140EB"/>
+                <path d="M1.52808 7.71777L1.52808 6.27777L13.7681 6.27777L13.7681 7.71777L1.52808 7.71777Z" fill="#7140EB"/>
+              </svg>
+                
+            </button>
+            <button class="products__button products__button-next">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.77607 12.9756L11.7521 6.99962L5.77607 1.02363L6.78407 0.0156247L13.7681 6.99962L6.78407 13.9836L5.77607 12.9756Z" fill="#7140EB"/>
+                <path d="M12.76 6.28027L12.76 7.72027L0.52001 7.72027L0.52001 6.28027L12.76 6.28027Z" fill="#7140EB"/>
+              </svg>
+            </button>
+          </nav>
+
         </div>
-        <ul class="products__list">
-          <li class="products__list__item">
-            <img src="assets/images/content/IMAGE-1.png" alt="" class="products__list-photo">
-            <div class="products__list-price">
-              <span>From €59 €39 / mo</span>
-              <span class="products__list-price__discount">Winter offer</span>
-            </div>
-            <div class="products__list-title">
-              <div class="products__list-title__desc">
-                Dance One Step
+        <ul class="products__swiper products__list swiper">
+          <div class="products__wrapper  swiper-wrapper"> 
+            <li class="products__list__item swiper-slide">
+              <img src="assets/images/content/IMAGE-1.png" alt="" class="products__list-photo">
+              <div class="products__list-price">
+                <span>From €59 €39 / mo</span>
+                <span class="products__list-price__discount">Winter offer</span>
               </div>
-              <div class="products__list-title__name">
-                Ebike
+              <div class="products__list-title">
+                <div class="products__list-title__desc">
+                  Dance One Step
+                </div>
+                <div class="products__list-title__name">
+                  Ebike
+                </div>
               </div>
-            </div>
-            <a href="#" class="products__details details">
-              <span>See details</span>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18.6 7.4L26.2 15H4V17H26.2L18.6 24.6L20 26L27.4 18.6C27.8 18.2 28 17.7 28 17.2V14.9C28 14.4 27.8 13.9 27.4 13.5L20 6L18.6 7.4Z" fill="black"/>
-              </svg>
-            </a>
-          </li>
-          <li class="products__list__item">
-            <img src="assets/images/content/lyasick.png" alt="" class="products__list-photo">
-            <div class="products__list-price">
-              <span>From €59 €39 / mo</span>
-              <span class="products__list-price__discount">Winter offer</span>
-            </div>
-            <div class="products__list-title">
-              <div class="products__list-title__desc">
-                Dance One
-              </div>
-              <div class="products__list-title__name">
-                Ebike
-              </div>
-            </div>
-            <a href="#" class="products__details details">
-              <span>See details</span>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18.6 7.4L26.2 15H4V17H26.2L18.6 24.6L20 26L27.4 18.6C27.8 18.2 28 17.7 28 17.2V14.9C28 14.4 27.8 13.9 27.4 13.5L20 6L18.6 7.4Z" fill="black"/>
-              </svg>
-            </a>
-          </li>
+              <a href="#" class="products__details details">
+                <span>See details</span>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.6 7.4L26.2 15H4V17H26.2L18.6 24.6L20 26L27.4 18.6C27.8 18.2 28 17.7 28 17.2V14.9C28 14.4 27.8 13.9 27.4 13.5L20 6L18.6 7.4Z" fill="black"/>
+                </svg>
+              </a>
+            </li>
 
-
-          <li class="products__list__item">
-            <img src="assets/images/content/IMAGE-2.png" alt="" class="products__list-photo">
-            <div class="products__list-price">
-              <span>From €89 €39 / mo</span>
-              <span class="products__list-price__discount">Winter offer</span>
-            </div>
-            <div class="products__list-title">
-              <div class="products__list-title__desc">
-                Dance moped
+            <li class="products__list__item swiper-slide">
+              <img src="assets/images/content/lyasick.png" alt="" class="products__list-photo">
+              <div class="products__list-price">
+                <span>From €59 €39 / mo</span>
+                <span class="products__list-price__discount">Winter offer</span>
               </div>
-              <div class="products__list-title__name">
-                Emoped
+              <div class="products__list-title">
+                <div class="products__list-title__desc">
+                  Dance One
+                </div>
+                <div class="products__list-title__name">
+                  Ebike
+                </div>
               </div>
-            </div>
-            <a href="#" class="products__details details">
-              <span>See details</span>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18.6 7.4L26.2 15H4V17H26.2L18.6 24.6L20 26L27.4 18.6C27.8 18.2 28 17.7 28 17.2V14.9C28 14.4 27.8 13.9 27.4 13.5L20 6L18.6 7.4Z" fill="black"/>
-              </svg>
-            </a>
-          </li>
+              <a href="#" class="products__details details">
+                <span>See details</span>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.6 7.4L26.2 15H4V17H26.2L18.6 24.6L20 26L27.4 18.6C27.8 18.2 28 17.7 28 17.2V14.9C28 14.4 27.8 13.9 27.4 13.5L20 6L18.6 7.4Z" fill="black"/>
+                </svg>
+              </a>
+            </li>
 
+            <li class="products__list__item swiper-slide">
+              <img src="assets/images/content/lyasick.png" alt="" class="products__list-photo">
+              <div class="products__list-price">
+                <span>From €59 €39 / mo</span>
+                <span class="products__list-price__discount">Winter offer</span>
+              </div>
+              <div class="products__list-title">
+                <div class="products__list-title__desc">
+                  Dance One
+                </div>
+                <div class="products__list-title__name">
+                  Ebike
+                </div>
+              </div>
+              <a href="#" class="products__details details">
+                <span>See details</span>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.6 7.4L26.2 15H4V17H26.2L18.6 24.6L20 26L27.4 18.6C27.8 18.2 28 17.7 28 17.2V14.9C28 14.4 27.8 13.9 27.4 13.5L20 6L18.6 7.4Z" fill="black"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="products__list__item swiper-slide">
+              <img src="assets/images/content/lyasick.png" alt="" class="products__list-photo">
+              <div class="products__list-price">
+                <span>From €59 €39 / mo</span>
+                <span class="products__list-price__discount">Winter offer</span>
+              </div>
+              <div class="products__list-title">
+                <div class="products__list-title__desc">
+                  Dance One
+                </div>
+                <div class="products__list-title__name">
+                  Ebike
+                </div>
+              </div>
+              <a href="#" class="products__details details">
+                <span>See details</span>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.6 7.4L26.2 15H4V17H26.2L18.6 24.6L20 26L27.4 18.6C27.8 18.2 28 17.7 28 17.2V14.9C28 14.4 27.8 13.9 27.4 13.5L20 6L18.6 7.4Z" fill="black"/>
+                </svg>
+              </a>
+            </li>
+
+            <li class="products__list__item swiper-slide">
+              <img src="assets/images/content/lyasick.png" alt="" class="products__list-photo">
+              <div class="products__list-price">
+                <span>From €59 €39 / mo</span>
+                <span class="products__list-price__discount">Winter offer</span>
+              </div>
+              <div class="products__list-title">
+                <div class="products__list-title__desc">
+                  Dance One
+                </div>
+                <div class="products__list-title__name">
+                  Ebike
+                </div>
+              </div>
+              <a href="#" class="products__details details">
+                <span>See details</span>
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M18.6 7.4L26.2 15H4V17H26.2L18.6 24.6L20 26L27.4 18.6C27.8 18.2 28 17.7 28 17.2V14.9C28 14.4 27.8 13.9 27.4 13.5L20 6L18.6 7.4Z" fill="black"/>
+                </svg>
+              </a>
+            </li>
+
+          </div>
         </ul>
       </div>
     </section>
+
   </main>
   <footer class="footer">
     <div class="footer__inner">
@@ -289,6 +356,8 @@
         </li>
       </ul>
   </div>
+
+<script src="assets/js/swiper-bundle.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>

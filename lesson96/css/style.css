@@ -480,7 +480,9 @@ justify-self: center;
   fill:#E1D9E1;
 }
 /* ==================================================== */
-
+.products__wrapper{
+  
+}
 .testimonials__top {
   display: flex;
   align-items: end;
@@ -546,9 +548,6 @@ justify-self: center;
   transform: scale(.9);
 }
 
-.testimonials__slide.swiper-slide{
-  /* transform:scale(1); */
-} 
 .testimonials__student {
   display: flex;
   gap:30px;

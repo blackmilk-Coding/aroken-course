@@ -22,6 +22,7 @@
 }
 .deliver__inner {
   display:flex;
+  gap:90px;
 }
 .deliver__step {
   flex-shrink: 0;
@@ -31,12 +32,16 @@
   font-size: 28px;
   line-height: 34px;
 }
-.deliver__list-item:not(:last-child) {
+.deliver__list-item{
   margin-bottom: 24px;
+}
+.deliver__list-item:last-child{
+  margin-bottom: 50px;
 }
 
 .deliver__main-link{
   max-width: 189px;
+  margin-bottom: 24px;
 }
 
 .deliver__image{
@@ -55,18 +60,61 @@
 
 
 /* products */
-.products__list{
+
+.products__top{
+  margin-bottom: 48px;
   display: flex;
-  flex-wrap: wrap;
-  gap:16px;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  align-items: end;
 }
-.products__list__item{
+
+.products__button,
+.products__button path{
+  transition:var(--transition);
+}
+.products__button:hover{
+  background-color: var(--active-link);
+  border-color: #7140EB;
+}
+
+.products__button:hover path{
+  fill:#dbcfcf;
+}
+
+.products__nav {
+  display: flex;
+  gap:10px;
+}
+.products__button {
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid var(--main-text);
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  transition:var(--transition);
+}
+
+.swiper-slide.products__list__item{
   border-radius: 16px;
   background: #FFF;
-  padding:67px 24px 32px 24px 
+  padding:67px 24px 32px 24px;
+}
+.products__list__item img{
+  max-width: 100%;
 }
 
 .products__list-price{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:26px;
   margin-bottom: 40px;
 }
 .products__list-price__discount{
@@ -74,7 +122,6 @@
   border-radius: 20px;
   background: #F1EEF8;
   color: #7140EB;
-  margin-left: 16px;
 }
 .products__list-title__desc{
   font-size: 29px;
@@ -168,11 +215,21 @@
     justify-content: center;
     column-gap:48px;
   }
+  .section-heading h2{
+    font-size: 60px;
+  }
+  .section-heading p {
+    margin-bottom: 60px;
+  }
   /* ================ */
 }
 
 @media (max-width:450px) {
   /* header */
+
+  .header-top{
+    padding:15px 20px;
+  }
   .hero__heading{
     max-width: 350px;
     font-size: 60px;
@@ -226,4 +283,14 @@
   .hero__text__paragraph{
     margin-bottom:20px;
   }
+
+  /* deliver */
+  .section-heading h2{
+    font-size: 45px;
+  }
+
+  .deliver__list-item:last-child{
+    margin-bottom: 24px;
+  }
+  /* =============== */
 }
