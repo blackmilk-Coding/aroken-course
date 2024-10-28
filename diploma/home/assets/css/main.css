@@ -288,8 +288,9 @@
     display: none;
   }
   .hero__heading{
-    max-width: 350px;
-    font-size: 80px;
+    max-width:400px;
+    font-size: 60px;
+    line-height: 82.192px;
   }
 
   .burger-button{
