@@ -379,9 +379,7 @@
     padding:15px 20px;
   }
   .hero__heading{
-    max-width: 350px;
-    font-size: 60px;
-    line-height:70px;
+    font-size: 30px;
   }
 
   .hero__text{
