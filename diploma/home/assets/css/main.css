@@ -245,6 +245,13 @@
   }
 }
 @media(max-width:1000px){
+  /* header */
+  .hero__heading{
+    max-width:400px;
+    font-size: 50px;
+    line-height: 82.192px;
+  }
+  /* =============== */
   /* support */
   .support__inner{
     flex-direction: column;
@@ -289,7 +296,7 @@
   }
   .hero__heading{
     max-width:400px;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 82.192px;
   }
 
@@ -436,9 +443,25 @@
   .container{
     padding:10px;
   }
-  .hero__text__paragraph{
-    margin-bottom:20px;
+  /* hero */
+  .hero__heading{
+    text-align: center;
+    max-width:none;
+    font-size: 20px;
+    line-height:50px;
   }
+
+  .hero__text__paragraph{
+
+    margin-bottom:0px;
+  }
+
+  .hero__text{
+    font-size: 15px;
+  }
+
+  
+  /* ==================== */
 
   /* deliver */
   .section-heading h2{
