@@ -587,10 +587,19 @@
 
   /* ================ */
   /* deliver */
+
+  .deliver-heading{
+    font-size: 35px;
+    line-height:normal;
+  }
   .deliver__list{
     grid-template-columns:none;
-    justify-content: center;
+    justify-content: start;
     column-gap:48px;
+  }
+
+  .deliver__list-item{
+    font-size: 17px;
   }
 
   /* ================ */
