@@ -17,6 +17,8 @@ body {
   margin-bottom: 68px;
 }
 
+.main__accordion,
+.main__subscription,
 .main__city,
 .main__support,
 .main__deliver,
