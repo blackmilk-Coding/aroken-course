@@ -44,7 +44,7 @@
 
 
 .hero{
-  padding:153px 0px 183px;
+  padding:153px 5px 183px;
   color:var(--other-text);
 
   display: flex;
@@ -70,6 +70,14 @@
   align-items: center;
   font-size: 21px;
   line-height: 23px;
+}
+
+.hero__text p{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.hero__text p:last-child{
+  margin-bottom: 0;
 }
 .hero__main-link{
   max-width: 183px;
