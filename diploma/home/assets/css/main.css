@@ -363,7 +363,7 @@
 .testimonials__list-item p{
   margin-bottom: 19px;
   line-height: 28.7px;
-  font-size: 29px;
+  font-size: 20px;
 }
 .testimonials__list-name {
   font-size: 17px;
@@ -661,6 +661,10 @@
     font-size: 40px;
     line-height: 60px;
   }
+
+  .section-heading h2{
+    font-size: 30px;
+  }
   /* ================ */
 
   /* products */
@@ -732,7 +736,9 @@
   }
 
   /* ==================== */
-
+  .section-heading__support h2{
+    font-size: 30px;
+  }
   /* deliver */
   .deliver__list-item:last-child{
     margin-bottom: 24px;
