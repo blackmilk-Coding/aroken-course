@@ -3,6 +3,6 @@
 <img src="https://github.com/blackcater/blackcater/raw/main/images/Hi.gif" height="32"/></h1>
 <h3 align="center">I am a student of Maxim Arokena</h3>
 <ul>
-  <li>на github pages, моя последняя работа.</li>
-  <li>ветка dev, нужна чтобы вносить изменения в мою последнию работу.<li>
+  <li>on github pages, my latest work.</li>
+  <li>dev branch, needed to make changes to my latest work.</li>
 </ul>
