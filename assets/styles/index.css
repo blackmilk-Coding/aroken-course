@@ -7,7 +7,24 @@ body{
 .header{
   padding:50px;
 }
+.header-nav-list__item-logo{
+  color: rgb(190, 109, 109);
+  text-decoration: none;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 30px;
+  border:3px solid #118DA8;
+  border-radius: 20px;
+  padding:10px;
+  box-shadow: #118DA8 0px 0px 20px;
+  transition: all .3s;
+}
 
+.header-nav-list__item-logo:hover{
+  color: rgb(247, 90, 90);
+  border-color:#575757;
+  border-radius: 20px;
+  box-shadow: #667e83 0px 0px 40px;
+}
 .header-nav-list{
   list-style-type: none;
   display: flex;
